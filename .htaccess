@@ -1,0 +1,25 @@
+# Force no-cache for portfolio content on Apache (WAMP)
+
+<IfModule mod_headers.c>
+    Header unset ETag
+
+    # HTML pages
+    <FilesMatch "\.(html|htm)$">
+        Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+        Header set Pragma "no-cache"
+        Header set Expires "0"
+    </FilesMatch>
+
+    # Static assets (CSS, JS, images, docs)
+    <FilesMatch "\.(css|js|png|jpg|jpeg|gif|webp|svg|ico|pdf)$">
+        Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+        Header set Pragma "no-cache"
+        Header set Expires "0"
+    </FilesMatch>
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive Off
+</IfModule>
+
+FileETag None

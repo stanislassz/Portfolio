@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Veille technologique - Portfolio Szylobryt Stanislas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">Szylobryt Stanislas</div>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="veille.html" class="active">Veille</a>
+        <a href="stages.html">Stages</a>
+        <a href="realisations.html">Réalisations professionnelles</a>
+        <a href="rectorat.html">Rectorat</a>
+        <a href="https://github.com/stanislassz" target="_blank">GitHub</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="section">
+        <h2>Veille technologique</h2>
+
+        <!-- SYNTHÈSE -->
+        <div class="panel">
+            <h3>Synthèse</h3>
+            <p>
+                L’année 2025 marque une accélération majeure vers les ordinateurs quantiques stables, avec des progrès 
+                sur la correction d'erreurs et l'augmentation du nombre de qubits exploitables (jusqu'à 1000+ qubits). 
+                Les applications émergent autour de la cybersécurité, des communications quantiques, des simulations 
+                moléculaires et de l'optimisation. Cette veille se concentre sur les avancées concrètes en 
+                <strong>ordinateur quantique</strong> et <strong>découvertes scientifiques</strong>.
+            </p>
+        </div>
+
+        <!-- THÈME / OUTILS / BORNAGE -->
+        <div class="two-columns">
+            <div class="panel">
+                <h3>Thème</h3>
+                <p><strong>Quantique</strong></p>
+
+                <h3>Outils de veille</h3>
+                <ul>
+                    <li>Quantum Computing Report</li>
+                    <li>Blog Olivier Ezratty</li>
+                    <li>Futura</li>
+                    <li>Google Actualités</li>
+                </ul>
+
+                <h3>Bornage</h3>
+                <p>
+                    <strong>Ordinateur quantique</strong> / <strong>Découverte scientifique</strong><br>
+                    2 news par mois de mars 2025 à mars 2026
+                </p>
+            </div>
+
+            <div class="panel">
+                <h3>Méthodologie</h3>
+                <p>
+                    Les news sont classées en 2 colonnes. Cliquez sur une carte pour voir les détails 
+                    (source, auteur, lien vers l'article original).
+                </p>
+            </div>
+        </div>
+
+        <!-- 2 COLONNES DE NEWS -->
+        <div class="news-grid">
+            
+            <!-- COLONNE 1 : Ordinateur quantique -->
+            <div class="news-column">
+                <h3>Ordinateur quantique</h3>
+                <div class="card-list">
+
+                    <article
+                        class="card news-card"
+                        onclick="openModal(this)"
+                        data-topic="Ordinateur quantique"
+                        data-date="06/12/2025"
+                        data-source="Mediapart"
+                        data-author="Rédaction Mediapart"
+                        data-summary="Google démontre un nouveau bornage d'erreur quantique avec des qubits logiques et un taux inférieur à 0,1 %, tout en soulignant les limites de montée en charge."
+                        data-url="#"
+                    >
+                        <div class="card-header">
+                            <span class="card-date">06/12/2025</span>
+                        </div>
+                        <h3>Google : délier les effets d'erreur</h3>
+                        <p class="card-desc">
+                            Nouveau bornage d'erreur avec qubits logiques &lt; 0,1%.
+                        </p>
+                    </article>
+
+                    <article
+                        class="card news-card"
+                        onclick="openModal(this)"
+                        data-topic="Ordinateur quantique"
+                        data-date="10/2025"
+                        data-source="Quantum Computing Report"
+                        data-author="Rédaction QCR"
+                        data-summary="Un prototype de 610 qubits franchit un jalon technique en combinant volume de calcul et premières briques robustes de correction d'erreurs."
+                        data-url="#"
+                    >
+                        <div class="card-header">
+                            <span class="card-date">10/2025</span>
+                        </div>
+                        <h3>Ordinateur quantique 610 qubits</h3>
+                        <p class="card-desc">
+                            Protototype historique avec correction d'erreurs.
+                        </p>
+                    </article>
+
+                    <article
+                        class="card news-card"
+                        onclick="openModal(this)"
+                        data-topic="Ordinateur quantique"
+                        data-date="20/08/2025"
+                        data-source="Commission Européenne"
+                        data-author="Direction EuroHPC"
+                        data-summary="L'Union européenne annonce son deuxième supercalculateur quantique pour accélérer la recherche en simulation et en optimisation industrielle."
+                        data-url="#"
+                    >
+                        <div class="card-header">
+                            <span class="card-date">20/08/2025</span>
+                        </div>
+                        <h3>Premiers ordinateurs européens</h3>
+                        <p class="card-desc">
+                            L'UE lance son 2e supercalculateur quantique.
+                        </p>
+                    </article>
+
+                    <article
+                        class="card news-card"
+                        onclick="openModal(this)"
+                        data-topic="Ordinateur quantique"
+                        data-date="04/2025"
+                        data-source="Fujitsu"
+                        data-author="Laboratoire Fujitsu RIKEN"
+                        data-summary="Le système 25 qubits de Fujitsu RIKEN cible les simulations moléculaires avec une meilleure densité de calcul sur une architecture hybride."
+                        data-url="#"
+                    >
+                        <div class="card-header">
+                            <span class="card-date">04/2025</span>
+                        </div>
+                        <h3>Fujitsu RIKEN : 25 qubits</h3>
+                        <p class="card-desc">
+                            Système haute densité pour simulations moléculaires.
+                        </p>
+                    </article>
+
+                    <article
+                        class="card news-card"
+                        onclick="openModal(this)"
+                        data-topic="Ordinateur quantique"
+                        data-date="24/04/2025"
+                        data-source="World Quantum Day"
+                        data-author="Organisation WQD"
+                        data-summary="La World Quantum Day 2025 met en avant les avancées en simulation de matériaux et en découverte de molécules avec des approches quantiques."
+                        data-url="#"
+                    >
+                        <div class="card-header">
+                            <span class="card-date">24/04/2025</span>
+                        </div>
+                        <h3>World Quantum Day 2025</h3>
+                        <p class="card-desc">
+                            Avancées en simulations moléculaires.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+
+            <!-- COLONNE 2 : Découverte scientifique -->
+            <div class="news-column">
+                <h3>Découverte scientifique</h3>
+                <div class="card-list">
+
+                    <article
+                        class="card news-card"
+                        onclick="openModal(this)"
+                        data-topic="Découverte scientifique"
+                        data-date="Décembre 2025"
+                        data-source="Comité Nobel"
+                        data-author="Académie royale des sciences de Suède"
+                        data-summary="Le Nobel de physique met en lumière le tunneling quantique et ses applications en microscopie de précision et composants semi-conducteurs avancés."
+                        data-url="#"
+                    >
+                        <div class="card-header">
+                            <span class="card-date">Décembre 2025</span>
+                        </div>
+                        <h3>Nobel Physique : Quantum Tunneling</h3>
+                        <p class="card-desc">
+                            Applications en microscopie et semi-conducteurs.
+                        </p>
+                    </article>
+
+                    <article
+                        class="card news-card"
+                        onclick="openModal(this)"
+                        data-topic="Découverte scientifique"
+                        data-date="03/12/2025"
+                        data-source="Quantum 75"
+                        data-author="Consortium Quantum 75"
+                        data-summary="Une expérience confirme l'intrication quantique sur 1000 km via satellite, ouvrant des perspectives fortes pour les réseaux quantiques sécurisés."
+                        data-url="#"
+                    >
+                        <div class="card-header">
+                            <span class="card-date">03/12/2025</span>
+                        </div>
+                        <h3>Quantum 75 : intrication 1000 km</h3>
+                        <p class="card-desc">
+                            Expériences confirmant l'intrication via satellite.
+                        </p>
+                    </article>
+
+                    <article
+                        class="card news-card"
+                        onclick="openModal(this)"
+                        data-topic="Découverte scientifique"
+                        data-date="19/06/2025"
+                        data-source="Nature Physics"
+                        data-author="Équipe internationale de recherche"
+                        data-summary="Des particules quantiques en espace effectif à 37 dimensions permettent de nouvelles stratégies de communication 3D à très haute capacité."
+                        data-url="#"
+                    >
+                        <div class="card-header">
+                            <span class="card-date">19/06/2025</span>
+                        </div>
+                        <h3>Particules en 37 dimensions</h3>
+                        <p class="card-desc">
+                            Communications quantiques 3D haute dimension.
+                        </p>
+                    </article>
+
+                    <article
+                        class="card news-card"
+                        onclick="openModal(this)"
+                        data-topic="Découverte scientifique"
+                        data-date="12/05/2025"
+                        data-source="Futura"
+                        data-author="Rédaction Futura"
+                        data-summary="Le mois de mai concentre plusieurs annonces sur la fiabilisation des architectures quantiques avec des objectifs crédibles à 1000 qubits d'ici 2028."
+                        data-url="#"
+                    >
+                        <div class="card-header">
+                            <span class="card-date">12/05/2025</span>
+                        </div>
+                        <h3>Révolutions Quantiques de Mai</h3>
+                        <p class="card-desc">
+                            Prototypes de 1000 qubits fiables d'ici 2028.
+                        </p>
+                    </article>
+
+                    <article
+                        class="card news-card"
+                        onclick="openModal(this)"
+                        data-topic="Découverte scientifique"
+                        data-date="16/10/2025"
+                        data-source="CNRS Le Journal"
+                        data-author="Service communication scientifique"
+                        data-summary="Un décryptage du Nobel 2025 montre l'impact du tunneling quantique dans les circuits supraconducteurs et l'électronique de demain."
+                        data-url="#"
+                    >
+                        <div class="card-header">
+                            <span class="card-date">16/10/2025</span>
+                        </div>
+                        <h3>Nobel de physique 2025 décrypté</h3>
+                        <p class="card-desc">
+                            Tunneling quantique en circuits supraconducteurs.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- MODAL DÉTAILS -->
+<div id="news-modal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="close" type="button" aria-label="Fermer la fenêtre">&times;</button>
+
+        <p class="modal-topic" id="modal-topic"></p>
+        <h3 id="modal-title"></h3>
+
+        <div class="modal-meta">
+            <p><strong>Date :</strong> <span id="modal-date"></span></p>
+            <p><strong>Source :</strong> <span id="modal-source"></span></p>
+            <p><strong>Auteur :</strong> <span id="modal-author"></span></p>
+        </div>
+
+        <p class="modal-summary" id="modal-summary"></p>
+        <a class="modal-link" id="modal-link" href="#" target="_blank" rel="noopener">Lire l'article complet</a>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>© Szylobryt Stanislas - BTS SIO SLAM</p>
+</footer>
+
+<script>
+const modal = document.getElementById('news-modal');
+const modalTitle = document.getElementById('modal-title');
+const modalTopic = document.getElementById('modal-topic');
+const modalDate = document.getElementById('modal-date');
+const modalSource = document.getElementById('modal-source');
+const modalAuthor = document.getElementById('modal-author');
+const modalSummary = document.getElementById('modal-summary');
+const modalLink = document.getElementById('modal-link');
+const closeButton = modal.querySelector('.close');
+let lastFocusedCard = null;
+
+function openModal(cardElement) {
+    const title = cardElement.querySelector('h3')?.textContent?.trim() || 'Actualité';
+
+    lastFocusedCard = cardElement;
+    modalTitle.textContent = title;
+    modalTopic.textContent = cardElement.dataset.topic || 'Veille technologique';
+    modalDate.textContent = cardElement.dataset.date || '-';
+    modalSource.textContent = cardElement.dataset.source || '-';
+    modalAuthor.textContent = cardElement.dataset.author || '-';
+    modalSummary.textContent = cardElement.dataset.summary || 'Détails indisponibles.';
+    modalLink.href = cardElement.dataset.url || '#';
+
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+    closeButton.focus();
+}
+
+function closeModal() {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('modal-open');
+
+    if (lastFocusedCard) {
+        lastFocusedCard.focus();
+    }
+}
+
+closeButton.addEventListener('click', closeModal);
+
+modal.addEventListener('click', function(event) {
+    if (event.target === modal) {
+        closeModal();
+    }
+});
+
+window.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' && modal.classList.contains('is-open')) {
+        closeModal();
+    }
+});
+
+document.querySelectorAll('.news-card').forEach(function(card) {
+    card.setAttribute('tabindex', '0');
+    card.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            openModal(card);
+        }
+    });
+});
+</script>
+
+</body>
+</html>
