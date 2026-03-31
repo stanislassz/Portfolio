@@ -430,7 +430,6 @@ a:hover {
     padding: 18px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
 }
 
 .shot-slot img {
