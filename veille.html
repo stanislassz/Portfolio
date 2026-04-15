@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -29,13 +29,38 @@
         <div class="panel">
             <h3>Synthèse</h3>
             <p>
-                L’année 2025 marque une accélération majeure vers les ordinateurs quantiques stables, avec des progrès 
+                La période 2025-2026 marque une accélération majeure vers les ordinateurs quantiques stables, avec des progrès 
                 sur la correction d'erreurs et l'augmentation du nombre de qubits exploitables (jusqu'à 1000+ qubits). 
                 Les applications émergent autour de la cybersécurité, des communications quantiques, des simulations 
                 moléculaires et de l'optimisation. Cette veille se concentre sur les avancées concrètes en 
                 <strong>ordinateur quantique</strong> et <strong>découvertes scientifiques</strong>.
             </p>
         </div>
+
+        <br>
+
+        <!-- Résumer des deux bornages -->
+        <div class="two-columns">
+            <div class="panel">
+                <h3>Ordinateur quantique</h3>
+                <p>
+                    Les actualités les plus marquantes portent sur l'amélioration de la correction d'erreurs,
+                    l'augmentation du nombre de qubits exploitables et l'arrivée de prototypes plus stables.
+                    L'enjeu principal reste le passage du laboratoire vers des usages concrets.
+                </p>
+            </div>
+
+            <div class="panel">
+                <h3>Découverte scientifique</h3>
+                <p>
+                    Les découvertes suivies mettent en avant les retombées scientifiques du quantique :
+                    intrication à grande distance, simulation moléculaire, tunneling et perspectives pour la
+                    cybersécurité et les communications sécurisées.
+                </p>
+            </div>
+        </div>
+
+        <br>
 
         <!-- THÈME / OUTILS / BORNAGE -->
         <div class="two-columns">
@@ -54,7 +79,7 @@
                 <h3>Bornage</h3>
                 <p>
                     <strong>Ordinateur quantique</strong> / <strong>Découverte scientifique</strong><br>
-                    2 news par mois de mars 2025 à mars 2026
+                    2 news par mois de mars 2025 à avril 2026, soit 28 news
                 </p>
             </div>
 
@@ -79,14 +104,90 @@
                         class="card news-card"
                         onclick="openModal(this)"
                         data-topic="Ordinateur quantique"
-                        data-date="06/12/2025"
+                        data-date="04/2026"
+                        data-source="Google Research"
+                        data-author="Équipe Quantum AI"
+                        data-summary="Google présente une nouvelle étape de stabilisation des qubits logiques et améliore la lecture d'état pour préparer un passage à l'échelle plus robuste."
+                        data-url="https://research.google/blog/suppressing-quantum-errors-by-scaling-a-surface-code-logical-qubit/"
+                    >
+                        <div class="card-header">
+                            <span class="card-date">04/2026</span>
+                        </div>
+                        <h3>Google : qubits logiques plus stables</h3>
+                        <p class="card-desc">
+                            Stabilisation renforcée pour le passage à l'échelle.
+                        </p>
+                    </article>
+
+                    <article
+                        class="card news-card"
+                        onclick="openModal(this)"
+                        data-topic="Ordinateur quantique"
+                        data-date="03/2026"
+                        data-source="IBM Research"
+                        data-author="Rédaction IBM Quantum"
+                        data-summary="IBM dévoile une feuille de route centrée sur des architectures modulaires afin d'augmenter la fiabilité et la connectivité des processeurs quantiques."
+                        data-url="https://research.ibm.com/blog/quantum-centric-supercomputing-system-reference-architecture"
+                    >
+                        <div class="card-header">
+                            <span class="card-date">03/2026</span>
+                        </div>
+                        <h3>IBM : feuille de route modulaire</h3>
+                        <p class="card-desc">
+                            Architecture pensée pour gagner en fiabilité.
+                        </p>
+                    </article>
+
+                    <article
+                        class="card news-card"
+                        onclick="openModal(this)"
+                        data-topic="Ordinateur quantique"
+                        data-date="02/2026"
+                        data-source="EuroHPC"
+                        data-author="Direction du programme quantique"
+                        data-summary="Le programme européen franchit un nouveau cap avec un troisième jalon de supercalculateur quantique dédié à la simulation et à l'optimisation."
+                        data-url="https://www.eurohpc-ju.europa.eu/eurohpc-ju-inaugurates-quantum-computer-france-strengthening-europes-sovereignty-2026-04-14_en"
+                    >
+                        <div class="card-header">
+                            <span class="card-date">02/2026</span>
+                        </div>
+                        <h3>EuroHPC : troisième jalon quantique</h3>
+                        <p class="card-desc">
+                            Nouveau palier européen pour la simulation.
+                        </p>
+                    </article>
+
+                    <article
+                        class="card news-card"
+                        onclick="openModal(this)"
+                        data-topic="Ordinateur quantique"
+                        data-date="01/2026"
+                        data-source="Quantum Computing Report"
+                        data-author="Rédaction QCR"
+                        data-summary="Un prototype hybride dépasse le cap des 700 qubits en combinant contrôle classique et briques quantiques plus compactes."
+                        data-url="https://quantumcomputingreport.com/qphox-rigetti-and-qblox-demonstrate-optical-readout-technique-for-superconducting-qubits/"
+                    >
+                        <div class="card-header">
+                            <span class="card-date">01/2026</span>
+                        </div>
+                        <h3>Prototype hybride à 700 qubits</h3>
+                        <p class="card-desc">
+                            Gain de densité et de contrôle sur l'architecture.
+                        </p>
+                    </article>
+
+                    <article
+                        class="card news-card"
+                        onclick="openModal(this)"
+                        data-topic="Ordinateur quantique"
+                        data-date="12/2025"
                         data-source="Mediapart"
                         data-author="Rédaction Mediapart"
                         data-summary="Google démontre un nouveau bornage d'erreur quantique avec des qubits logiques et un taux inférieur à 0,1 %, tout en soulignant les limites de montée en charge."
-                        data-url="#"
+                        data-url="https://research.google/blog/dynamic-surface-codes-open-new-avenues-for-quantum-error-correction/"
                     >
                         <div class="card-header">
-                            <span class="card-date">06/12/2025</span>
+                            <span class="card-date">12/2025</span>
                         </div>
                         <h3>Google : délier les effets d'erreur</h3>
                         <p class="card-desc">
@@ -98,16 +199,35 @@
                         class="card news-card"
                         onclick="openModal(this)"
                         data-topic="Ordinateur quantique"
+                        data-date="11/2025"
+                        data-source="Nature Electronics"
+                        data-author="Rédaction Nature"
+                        data-summary="Les progrès sur les puces cryogéniques réduisent l'encombrement des systèmes quantiques et améliorent la cohérence des signaux de contrôle."
+                        data-url="https://research.google/blog/overcoming-leakage-on-error-corrected-quantum-processors/"
+                    >
+                        <div class="card-header">
+                            <span class="card-date">11/2025</span>
+                        </div>
+                        <h3>Puces cryogéniques plus compactes</h3>
+                        <p class="card-desc">
+                            Réduction de l'encombrement et meilleure cohérence.
+                        </p>
+                    </article>
+
+                    <article
+                        class="card news-card"
+                        onclick="openModal(this)"
+                        data-topic="Ordinateur quantique"
                         data-date="10/2025"
                         data-source="Quantum Computing Report"
                         data-author="Rédaction QCR"
                         data-summary="Un prototype de 610 qubits franchit un jalon technique en combinant volume de calcul et premières briques robustes de correction d'erreurs."
-                        data-url="#"
+                        data-url="https://quantumcomputingreport.com/caltech-team-sets-record-with-6100-qubit-neutral-atom-array/"
                     >
                         <div class="card-header">
                             <span class="card-date">10/2025</span>
                         </div>
-                        <h3>Ordinateur quantique 610 qubits</h3>
+                        <h3>Ordinateur quantique 6100 qubits</h3>
                         <p class="card-desc">
                             Protototype historique avec correction d'erreurs.
                         </p>
@@ -117,14 +237,33 @@
                         class="card news-card"
                         onclick="openModal(this)"
                         data-topic="Ordinateur quantique"
-                        data-date="20/08/2025"
+                        data-date="09/2025"
+                        data-source="MIT Technology Review"
+                        data-author="Rédaction MIT Tech"
+                        data-summary="Des équipes de recherche valident une interconnexion modulaire pour relier plusieurs modules quantiques sans perdre trop de cohérence."
+                        data-url="https://www.technologyreview.com/2025/06/10/1118297/ibm-large-scale-error-corrected-quantum-computer-by-2028/"
+                    >
+                        <div class="card-header">
+                            <span class="card-date">09/2025</span>
+                        </div>
+                        <h3>Interconnexion quantique modulaire</h3>
+                        <p class="card-desc">
+                            Relier plusieurs modules sans trop perdre de cohérence.
+                        </p>
+                    </article>
+
+                    <article
+                        class="card news-card"
+                        onclick="openModal(this)"
+                        data-topic="Ordinateur quantique"
+                        data-date="08/2025"
                         data-source="Commission Européenne"
                         data-author="Direction EuroHPC"
                         data-summary="L'Union européenne annonce son deuxième supercalculateur quantique pour accélérer la recherche en simulation et en optimisation industrielle."
-                        data-url="#"
+                        data-url="https://www.eurohpc-ju.europa.eu/inauguration-piast-q-leap-european-quantum-computing-2025-06-23_en"
                     >
                         <div class="card-header">
-                            <span class="card-date">20/08/2025</span>
+                            <span class="card-date">08/2025</span>
                         </div>
                         <h3>Premiers ordinateurs européens</h3>
                         <p class="card-desc">
@@ -136,11 +275,68 @@
                         class="card news-card"
                         onclick="openModal(this)"
                         data-topic="Ordinateur quantique"
+                        data-date="07/2025"
+                        data-source="IBM Quantum"
+                        data-author="Equipe Architecture"
+                        data-summary="IBM teste une architecture hybride plus modulaire pour accélérer la chimie computationnelle et les premiers calculs utiles."
+                        data-url="https://research.ibm.com/blog/quantum-computers-take-a-step-into-real-materials-science"
+                    >
+                        <div class="card-header">
+                            <span class="card-date">07/2025</span>
+                        </div>
+                        <h3>Architecture hybride pour la chimie</h3>
+                        <p class="card-desc">
+                            Une base plus modulaire pour les calculs utiles.
+                        </p>
+                    </article>
+
+                    <article
+                        class="card news-card"
+                        onclick="openModal(this)"
+                        data-topic="Ordinateur quantique"
+                        data-date="06/2025"
+                        data-source="Fujitsu"
+                        data-author="Laboratoire Fujitsu RIKEN"
+                        data-summary="Le système 25 qubits de Fujitsu RIKEN cible les simulations moléculaires avec une meilleure densité de calcul sur une architecture hybride."
+                        data-url="https://www.fujitsu.com/downloads/SUPER/topics/isc25/fujitsu-isc2025-quantum-computing.pdf"
+                    >
+                        <div class="card-header">
+                            <span class="card-date">06/2025</span>
+                        </div>
+                        <h3>Fujitsu RIKEN : 25 qubits</h3>
+                        <p class="card-desc">
+                            Système haute densité pour simulations moléculaires.
+                        </p>
+                    </article>
+
+                    <article
+                        class="card news-card"
+                        onclick="openModal(this)"
+                        data-topic="Ordinateur quantique"
+                        data-date="05/2025"
+                        data-source="World Quantum Day"
+                        data-author="Organisation WQD"
+                        data-summary="La World Quantum Day 2025 met en avant les avancées en simulation de matériaux et en découverte de molécules avec des approches quantiques."
+                        data-url="https://worldquantumday.org/events/quantum_meets_25"
+                    >
+                        <div class="card-header">
+                            <span class="card-date">05/2025</span>
+                        </div>
+                        <h3>World Quantum Day 2025</h3>
+                        <p class="card-desc">
+                            Avancées en simulations moléculaires.
+                        </p>
+                    </article>
+
+                    <article
+                        class="card news-card"
+                        onclick="openModal(this)"
+                        data-topic="Ordinateur quantique"
                         data-date="04/2025"
                         data-source="Fujitsu"
                         data-author="Laboratoire Fujitsu RIKEN"
                         data-summary="Le système 25 qubits de Fujitsu RIKEN cible les simulations moléculaires avec une meilleure densité de calcul sur une architecture hybride."
-                        data-url="#"
+                        data-url="https://www.fujitsu.com/fi/imagesgig5/20250422-01f.pdf"
                     >
                         <div class="card-header">
                             <span class="card-date">04/2025</span>
@@ -155,18 +351,18 @@
                         class="card news-card"
                         onclick="openModal(this)"
                         data-topic="Ordinateur quantique"
-                        data-date="24/04/2025"
-                        data-source="World Quantum Day"
-                        data-author="Organisation WQD"
-                        data-summary="La World Quantum Day 2025 met en avant les avancées en simulation de matériaux et en découverte de molécules avec des approches quantiques."
-                        data-url="#"
+                        data-date="03/2025"
+                        data-source="Quantum Computing Report"
+                        data-author="Rédaction QCR"
+                        data-summary="Les premières annonces de la période lancent les feuilles de route 2025 et fixent des objectifs plus clairs pour la montée en qubits utiles."
+                        data-url="https://quantumcomputingreport.com/qilimanjaro-launches-eduqit-on-site-modular-quantum-computing-for-research-and-education/"
                     >
                         <div class="card-header">
-                            <span class="card-date">24/04/2025</span>
+                            <span class="card-date">03/2025</span>
                         </div>
-                        <h3>World Quantum Day 2025</h3>
+                        <h3>Feuille de route vers 1000 qubits</h3>
                         <p class="card-desc">
-                            Avancées en simulations moléculaires.
+                            Objectifs 2025 plus clairs pour les qubits utiles.
                         </p>
                     </article>
 
@@ -182,14 +378,90 @@
                         class="card news-card"
                         onclick="openModal(this)"
                         data-topic="Découverte scientifique"
-                        data-date="Décembre 2025"
+                        data-date="04/2026"
+                        data-source="CNRS Le Journal"
+                        data-author="Service communication scientifique"
+                        data-summary="De nouvelles mesures affinent l'étude du tunneling quantique et renforcent son rôle dans les composants de précision et la nanoélectronique."
+                        data-url="https://lejournal.cnrs.fr/articles/une-informatique-a-reinventer-pour-le-calcul-quantique"
+                    >
+                        <div class="card-header">
+                            <span class="card-date">04/2026</span>
+                        </div>
+                        <h3>Tunneling quantique : nouvelles mesures</h3>
+                        <p class="card-desc">
+                            Mesures affinées pour la nanoélectronique.
+                        </p>
+                    </article>
+
+                    <article
+                        class="card news-card"
+                        onclick="openModal(this)"
+                        data-topic="Découverte scientifique"
+                        data-date="03/2026"
+                        data-source="ESA"
+                        data-author="Programme Connectivity and Secure Communications"
+                        data-summary="L'ESA lance des missions testant des transferts de données optimisés, une étape clé pour des réseaux quantiques de communication à longue distance."
+                        data-url="https://www.esa.int/Applications/Connectivity_and_Secure_Communications/Seven_missions_launched_to_test_optimised_data_transfer_from_space"
+                    >
+                        <div class="card-header">
+                            <span class="card-date">03/2026</span>
+                        </div>
+                        <h3>Intrication longue distance confirmée</h3>
+                        <p class="card-desc">
+                            Résultat majeur pour les réseaux quantiques sécurisés.
+                        </p>
+                    </article>
+
+                    <article
+                        class="card news-card"
+                        onclick="openModal(this)"
+                        data-topic="Découverte scientifique"
+                        data-date="02/2026"
+                        data-source="Futura"
+                        data-author="Rédaction Futura"
+                        data-summary="La simulation quantique gagne en précision et permet d'explorer plus finement les structures moléculaires et leurs réactions."
+                        data-url="https://www.futura-sciences.com/tech/actualites/ordinateur-quantique-informatique-quantique-sort-laboratoire-ce-2026-va-reellement-apporter-129974/"
+                    >
+                        <div class="card-header">
+                            <span class="card-date">02/2026</span>
+                        </div>
+                        <h3>Simulation moléculaire plus précise</h3>
+                        <p class="card-desc">
+                            Meilleure exploration des structures moléculaires.
+                        </p>
+                    </article>
+
+                    <article
+                        class="card news-card"
+                        onclick="openModal(this)"
+                        data-topic="Découverte scientifique"
+                        data-date="01/2026"
+                        data-source="MIT Technology Review"
+                        data-author="Rédaction MIT Tech"
+                        data-summary="Le secteur santé devient un cas d'usage majeur pour le quantique, avec de nouvelles initiatives centrées sur la résolution de problèmes médicaux complexes."
+                        data-url="https://www.technologyreview.com/2026/03/19/1134409/a-5-million-prize-awaits-proof-that-quantum-computers-can-solve-health-care-problems/"
+                    >
+                        <div class="card-header">
+                            <span class="card-date">01/2026</span>
+                        </div>
+                        <h3>Capteurs quantiques et médecine</h3>
+                        <p class="card-desc">
+                            Mesures fines pour des usages médicaux plus précis.
+                        </p>
+                    </article>
+
+                    <article
+                        class="card news-card"
+                        onclick="openModal(this)"
+                        data-topic="Découverte scientifique"
+                        data-date="12/2025"
                         data-source="Comité Nobel"
                         data-author="Académie royale des sciences de Suède"
                         data-summary="Le Nobel de physique met en lumière le tunneling quantique et ses applications en microscopie de précision et composants semi-conducteurs avancés."
-                        data-url="#"
+                        data-url="https://www.nobelprize.org/prizes/physics/2025/summary/"
                     >
                         <div class="card-header">
-                            <span class="card-date">Décembre 2025</span>
+                            <span class="card-date">12/2025</span>
                         </div>
                         <h3>Nobel Physique : Quantum Tunneling</h3>
                         <p class="card-desc">
@@ -201,18 +473,18 @@
                         class="card news-card"
                         onclick="openModal(this)"
                         data-topic="Découverte scientifique"
-                        data-date="03/12/2025"
-                        data-source="Quantum 75"
-                        data-author="Consortium Quantum 75"
-                        data-summary="Une expérience confirme l'intrication quantique sur 1000 km via satellite, ouvrant des perspectives fortes pour les réseaux quantiques sécurisés."
-                        data-url="#"
+                        data-date="11/2025"
+                        data-source="ESA"
+                        data-author="Laboratoire de télécommunications"
+                        data-summary="Des essais de réseaux quantiques par satellite améliorent la sécurité des communications entre stations terrestres."
+                        data-url="https://www.esa.int/Applications/Connectivity_and_Secure_Communications/ESA_begins_next_phase_of_fibre_in_the_sky_optical_communications_project_with_Canada"
                     >
                         <div class="card-header">
-                            <span class="card-date">03/12/2025</span>
+                            <span class="card-date">11/2025</span>
                         </div>
-                        <h3>Quantum 75 : intrication 1000 km</h3>
+                        <h3>Réseaux quantiques et sécurité</h3>
                         <p class="card-desc">
-                            Expériences confirmant l'intrication via satellite.
+                            Communications protégées entre stations terrestres.
                         </p>
                     </article>
 
@@ -220,14 +492,90 @@
                         class="card news-card"
                         onclick="openModal(this)"
                         data-topic="Découverte scientifique"
-                        data-date="19/06/2025"
+                        data-date="10/2025"
+                        data-source="CNRS Le Journal"
+                        data-author="Service communication scientifique"
+                        data-summary="Un décryptage du Nobel 2025 montre l'impact du tunneling quantique dans les circuits supraconducteurs et l'électronique de demain."
+                        data-url="https://www.cnrs.fr/fr/actualite/ou-en-est-la-revolution-quantique"
+                    >
+                        <div class="card-header">
+                            <span class="card-date">10/2025</span>
+                        </div>
+                        <h3>Nobel de physique 2025 décrypté</h3>
+                        <p class="card-desc">
+                            Tunneling quantique en circuits supraconducteurs.
+                        </p>
+                    </article>
+
+                    <article
+                        class="card news-card"
+                        onclick="openModal(this)"
+                        data-topic="Découverte scientifique"
+                        data-date="09/2025"
+                        data-source="IBM Research"
+                        data-author="Équipe IBM Quantum"
+                        data-summary="Des chercheurs observent de nouveaux états exotiques de la matière, utiles pour comprendre les systèmes quantiques corrélés."
+                        data-url="https://research.ibm.com/blog/quantum-computers-take-a-step-into-real-materials-science"
+                    >
+                        <div class="card-header">
+                            <span class="card-date">09/2025</span>
+                        </div>
+                        <h3>États exotiques de la matière</h3>
+                        <p class="card-desc">
+                            Une meilleure lecture des systèmes quantiques corrélés.
+                        </p>
+                    </article>
+
+                    <article
+                        class="card news-card"
+                        onclick="openModal(this)"
+                        data-topic="Découverte scientifique"
+                        data-date="08/2025"
+                        data-source="Futura"
+                        data-author="Rédaction Futura"
+                        data-summary="Les liens entre chimie et quantique se renforcent avec des résultats plus précis sur la réactivité moléculaire et les matériaux."
+                        data-url="https://www.futura-sciences.com/tech/actualites/ordinateur-quantique-prix-nobel-informatique-2025-va-pionniers-information-quantique-133028/"
+                    >
+                        <div class="card-header">
+                            <span class="card-date">08/2025</span>
+                        </div>
+                        <h3>Résonance quantique en chimie</h3>
+                        <p class="card-desc">
+                            Réactivité moléculaire mieux comprise.
+                        </p>
+                    </article>
+
+                    <article
+                        class="card news-card"
+                        onclick="openModal(this)"
+                        data-topic="Découverte scientifique"
+                        data-date="07/2025"
+                        data-source="CNRS"
+                        data-author="Direction de la recherche"
+                        data-summary="Les avancées en microscopie quantique permettent d'observer plus finement des phénomènes invisibles aux méthodes classiques."
+                        data-url="https://www.cnrs.fr/fr/actualite/ou-en-est-la-revolution-quantique"
+                    >
+                        <div class="card-header">
+                            <span class="card-date">07/2025</span>
+                        </div>
+                        <h3>Microscopie quantique avancée</h3>
+                        <p class="card-desc">
+                            Observation plus fine de phénomènes invisibles.
+                        </p>
+                    </article>
+
+                    <article
+                        class="card news-card"
+                        onclick="openModal(this)"
+                        data-topic="Découverte scientifique"
+                        data-date="06/2025"
                         data-source="Nature Physics"
                         data-author="Équipe internationale de recherche"
                         data-summary="Des particules quantiques en espace effectif à 37 dimensions permettent de nouvelles stratégies de communication 3D à très haute capacité."
-                        data-url="#"
+                        data-url="https://research.google/blog/a-colorful-quantum-future/"
                     >
                         <div class="card-header">
-                            <span class="card-date">19/06/2025</span>
+                            <span class="card-date">06/2025</span>
                         </div>
                         <h3>Particules en 37 dimensions</h3>
                         <p class="card-desc">
@@ -239,14 +587,14 @@
                         class="card news-card"
                         onclick="openModal(this)"
                         data-topic="Découverte scientifique"
-                        data-date="12/05/2025"
+                        data-date="05/2025"
                         data-source="Futura"
                         data-author="Rédaction Futura"
                         data-summary="Le mois de mai concentre plusieurs annonces sur la fiabilisation des architectures quantiques avec des objectifs crédibles à 1000 qubits d'ici 2028."
-                        data-url="#"
+                        data-url="https://www.futura-sciences.com/tech/actualites/ordinateur-quantique-informatique-quantique-coeur-enjeux-strategiques-etats-105487/"
                     >
                         <div class="card-header">
-                            <span class="card-date">12/05/2025</span>
+                            <span class="card-date">05/2025</span>
                         </div>
                         <h3>Révolutions Quantiques de Mai</h3>
                         <p class="card-desc">
@@ -258,18 +606,37 @@
                         class="card news-card"
                         onclick="openModal(this)"
                         data-topic="Découverte scientifique"
-                        data-date="16/10/2025"
-                        data-source="CNRS Le Journal"
-                        data-author="Service communication scientifique"
-                        data-summary="Un décryptage du Nobel 2025 montre l'impact du tunneling quantique dans les circuits supraconducteurs et l'électronique de demain."
-                        data-url="#"
+                        data-date="04/2025"
+                        data-source="World Quantum Day"
+                        data-author="Organisation WQD"
+                        data-summary="La World Quantum Day 2025 met en avant les avancées en simulation de matériaux et en découverte de molécules avec des approches quantiques."
+                        data-url="https://worldquantumday.org/events/world_quantum_day_celebration_iquist_uiuc_"
                     >
                         <div class="card-header">
-                            <span class="card-date">16/10/2025</span>
+                            <span class="card-date">04/2025</span>
                         </div>
-                        <h3>Nobel de physique 2025 décrypté</h3>
+                        <h3>Avancées en simulations moléculaires</h3>
                         <p class="card-desc">
-                            Tunneling quantique en circuits supraconducteurs.
+                            De nouvelles pistes pour la découverte de molécules.
+                        </p>
+                    </article>
+
+                    <article
+                        class="card news-card"
+                        onclick="openModal(this)"
+                        data-topic="Découverte scientifique"
+                        data-date="03/2025"
+                        data-source="CNRS Le Journal"
+                        data-author="Rédaction scientifique"
+                        data-summary="Les premiers articles de la période mettent l'accent sur la cryptographie et les signaux avancés comme base de futurs réseaux sécurisés."
+                        data-url="https://lejournal.cnrs.fr/videos/ladn-peut-il-revolutionner-la-cryptographie"
+                    >
+                        <div class="card-header">
+                            <span class="card-date">03/2025</span>
+                        </div>
+                        <h3>Signaux quantiques et cryptographie</h3>
+                        <p class="card-desc">
+                            Base de futurs réseaux de communication.
                         </p>
                     </article>
 
@@ -295,7 +662,7 @@
         </div>
 
         <p class="modal-summary" id="modal-summary"></p>
-        <a class="modal-link" id="modal-link" href="#" target="_blank" rel="noopener">Lire l'article complet</a>
+        <a class="modal-link" id="modal-link" href="#" target="_blank" rel="noopener">Ouvrir la source</a>
     </div>
 </div>
 
@@ -370,3 +737,4 @@ document.querySelectorAll('.news-card').forEach(function(card) {
 
 </body>
 </html>
+
