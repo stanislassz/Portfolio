@@ -359,6 +359,59 @@ a:hover {
     padding: 28px;
 }
 
+.realisation-expandable {
+    padding: 0;
+    overflow: hidden;
+}
+
+.realisation-summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 28px;
+}
+
+.realisation-summary::-webkit-details-marker {
+    display: none;
+}
+
+.realisation-summary::after {
+    content: "Voir les captures";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(96, 165, 250, 0.35);
+    color: var(--accent-blue-soft);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+}
+
+.realisation-expandable[open] .realisation-summary::after {
+    content: "Masquer les captures";
+}
+
+.realisation-details {
+    padding: 0 28px 28px;
+}
+
+.realisation-expandable .realisation-head {
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgba(251, 146, 60, 0.2);
+    margin-bottom: 18px;
+}
+
+.realisation-summary-label {
+    display: inline-block;
+    margin-top: 14px;
+    color: var(--accent-orange-soft);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+
 .realisation-head {
     display: flex;
     align-items: baseline;
@@ -486,6 +539,19 @@ a:hover {
 
 .project-two-pairs .shot-wide {
     min-height: 360px;
+}
+
+.detail-thumbs-small .shot-wide {
+    min-height: auto;
+    padding: 14px;
+}
+
+.detail-thumbs-small .shot-slot img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
 }
 
 .project-two-examples {
