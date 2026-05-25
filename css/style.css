@@ -474,7 +474,7 @@ a:hover {
 }
 
 .image-grid-2 {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .image-grid-3 {
@@ -916,6 +916,10 @@ body.modal-open {
     }
 
     .project-two-examples {
+        grid-template-columns: 1fr;
+    }
+
+    .image-grid-2 {
         grid-template-columns: 1fr;
     }
 }
