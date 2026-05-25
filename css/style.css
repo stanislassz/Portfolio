@@ -320,6 +320,20 @@ a:hover {
     background: rgba(251, 146, 60, 0.12);
 }
 
+.mastery-badge {
+    display: inline-block;
+    margin-left: 10px;
+    background: var(--accent-orange);
+    color: #081018;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    border: 1px solid rgba(0,0,0,0.08);
+}
+
 .card-link a {
     text-decoration: none;
     border-bottom: 1px solid var(--accent-blue-soft);
@@ -904,4 +918,27 @@ body.modal-open {
     .project-two-examples {
         grid-template-columns: 1fr;
     }
+}
+
+/* ============ DESCRIPTION RÉUTILISABLE ============ */
+.project-description {
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border: 1px solid rgba(148,163,184,0.06);
+    padding: 16px 18px;
+    margin: 12px 0 18px;
+    border-radius: 10px;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.project-description h4 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: var(--accent-blue-soft);
+    font-size: 0.98rem;
+}
+
+.project-description p {
+    margin: 0;
 }
