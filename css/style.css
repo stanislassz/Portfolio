@@ -950,3 +950,15 @@ body.modal-open {
 .project-description p {
     margin: 0;
 }
+
+.realisation-details > .project-description {
+    margin-top: 16px;
+}
+
+.realisation-details > .project-description:first-child {
+    margin-top: 0;
+}
+
+.realisation-details > .project-description + .image-grid {
+    margin-top: 0;
+}
