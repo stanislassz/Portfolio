@@ -495,9 +495,7 @@ a:hover {
             rgba(148, 163, 184, 0) 24px
         );
     padding: 18px;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
+    display: block;
 }
 
 .shot-slot img {
@@ -510,8 +508,7 @@ a:hover {
 }
 
 .shot-slot .project-description {
-    flex: 0 0 auto;
-    margin: 0;
+    margin: 0 0 14px;
 }
 
 .shot-large {
