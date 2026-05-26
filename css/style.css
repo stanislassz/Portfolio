@@ -497,14 +497,21 @@ a:hover {
     padding: 18px;
     display: flex;
     flex-direction: column;
+    gap: 14px;
 }
 
 .shot-slot img {
     width: 100%;
-    height: calc(100% - 2px);
+    height: auto;
+    max-height: none;
     object-fit: cover;
     border-radius: 8px;
     display: block;
+}
+
+.shot-slot .project-description {
+    flex: 0 0 auto;
+    margin: 0;
 }
 
 .shot-large {
